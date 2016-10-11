@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rayihbou.googlemaps.Principal">
+
+    <TextView
+        android:text="Bogota D.C. - Colombia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvGoogleMaps"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/monserate"
+        android:id="@+id/imbMonserate"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/tvGoogleMaps"
+        android:layout_alignLeft="@+id/tvGoogleMaps"
+        android:layout_alignStart="@+id/tvGoogleMaps"
+        android:scaleType="centerCrop"
+        android:onClick="irMonserate"/>
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/plaza_de_bolivar"
+        android:id="@+id/imbPlazaBolivar"
+        android:scaleType="centerCrop"
+        android:layout_alignTop="@+id/imbMonserate"
+        android:layout_alignRight="@+id/tvGoogleMaps"
+        android:layout_alignEnd="@+id/tvGoogleMaps"
+        android:onClick="irPlazaBolivar"/>
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/casa_narino"
+        android:id="@+id/imbNarino"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imbMonserate"
+        android:layout_alignStart="@+id/imbMonserate"
+        android:onClick="irCasaNarino"/>
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/torre_colpatria"
+        android:id="@+id/imbColpatria"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imbPlazaBolivar"
+        android:layout_alignStart="@+id/imbPlazaBolivar"
+        android:onClick="irColPatria"/>
+
+    <TextView
+        android:text="@string/monserrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imbPlazaBolivar"
+        android:layout_alignRight="@+id/imbMonserate"
+        android:layout_alignEnd="@+id/imbMonserate"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:id="@+id/tvMonserrate" />
+
+    <TextView
+        android:text="Casa de Nariño"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTorreColpatria"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/imbNarino"
+        android:layout_alignStart="@+id/imbNarino"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
+
+    <TextView
+        android:text="@string/plaza_de_bolivar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPlazaBolivar"
+        android:layout_above="@+id/imbPlazaBolivar"
+        android:layout_alignLeft="@+id/imbPlazaBolivar"
+        android:layout_alignStart="@+id/imbPlazaBolivar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:text="Torre ColPatria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/imbColpatria"
+        android:layout_alignLeft="@+id/tvPlazaBolivar"
+        android:layout_alignStart="@+id/tvPlazaBolivar" />
+
+
+</RelativeLayout>

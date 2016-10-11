@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GoogleMaps</string>
+    <string name="title_activity_mapas">Map</string>
+    <string name="googlemaps_api">GoogleMaps Api</string>
+    <string name="generar_mapas">Generar Mapas</string>
+    <string name="monserrate">Monserrate</string>
+    <string name="plaza_de_bolivar">Plaza de Bolivar</string>
+    <string name="title_activity_monserrate">Map</string>
+    <string name="title_activity_plaza_bolivars">Map</string>
+    <string name="title_activity_monserate">Map</string>
+    <string name="title_activity_torre_col_patria">Map</string>
+    <string name="title_activity_casade_narino">Map</string>
+</resources>
